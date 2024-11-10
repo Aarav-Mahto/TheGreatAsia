@@ -19,6 +19,10 @@ public class ClientController {
                 
                     case "iphone-xr":
                         return "/allPosts/iphone-xr";
+
+                    case "iphone-xs":
+                        return "/allPosts/iphone-xs";
+
                     default:
                         throw new ResponseStatusException(HttpStatus.NOT_FOUND);
                 }

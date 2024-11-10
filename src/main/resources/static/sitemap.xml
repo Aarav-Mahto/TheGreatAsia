@@ -20,7 +20,13 @@
     </url>
     <url>
         <loc>https://www.thegreatasia.com/articles/ng/iphone-xr</loc>
-        <lastmod>2024-11-01</lastmod>
+        <lastmod>2024-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.thegreatasia.com/articles/ng/iphone-xs</loc>
+        <lastmod>2024-11-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
