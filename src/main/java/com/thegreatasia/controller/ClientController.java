@@ -8,7 +8,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 @Controller
 public class ClientController {
-    
+
     @GetMapping({"/articles/{code}/{url}"})
     public String getiPhonex(@PathVariable("code") String code, @PathVariable("url") String url){
         switch (code) {
@@ -26,9 +26,25 @@ public class ClientController {
                     default:
                         throw new ResponseStatusException(HttpStatus.NOT_FOUND);
                 }
+              case"in":
+                 switch (url) {
+                  case "iphone-17-pro-max":
+                     return "/allPosts/iPhone-17-Pro-Max";
+                 
+                   default:
+                       throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+                     
+                }
+
+                case "test":
+                    return "/allPosts/test";
         
             default:
+            {
                 throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+            }
+         
+        
         }
     }
 }
